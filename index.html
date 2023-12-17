@@ -1,20 +1,63 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <title>Clickable Video Card</title>
     <style>
         body {
-            display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
+            background-image: url('Galaxy.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+        }
+
+        @keyframes rainbow {
+            0% {
+                color: violet;
+            }
+
+            16.666% {
+                color: indigo;
+            }
+
+            33.333% {
+                color: blue;
+            }
+
+            50% {
+                color: green;
+            }
+
+            66.666% {
+                color: yellow;
+            }
+
+            83.333% {
+                color: orange;
+            }
+
+            100% {
+                color: red;
+            }
+        }
+
+        .rainbow-text {
+            display: inline-block;
+            font-size: 24px;
+            font-weight: bold;
+            animation: rainbow 7s linear infinite;
         }
 
         .video-card {
             cursor: pointer;
-            width: 800px;
-            height: 600px; 
+            width: 800px; /* Adjust the width */
+            height: 600px; /* Adjust the height */
             border: 1px solid #ccc;
             display: flex;
             justify-content: center;
@@ -35,9 +78,10 @@
     <div class="video-card" onclick="openNewPage('https://flimcyv.github.io/FlimmyFlix/')"></div>
 
     <div>
-        <h1>
-            PRESS THE PICTURE FOR FREE MOVIE WEBSITE!
+        <<h1 class="rainbow-text" style="font-size: 36px;">
+            PRESS BUTTON ABOVE FOR MOVIE WEBSITE!
         </h1>
+
     </div>
 </body>
 </html>
