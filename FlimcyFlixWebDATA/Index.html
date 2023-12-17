@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go to home</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        #greenButton {
+            background-color: green;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <button id="greenButton" onclick="changeURL()">Go to main screen</button>
+
+    <script>
+        function changeURL() {
+            // Change the URL to the desired .html file
+            window.location.href = 'DOTWK.html';
+        }
+    </script>
+
+</body>
+</html>

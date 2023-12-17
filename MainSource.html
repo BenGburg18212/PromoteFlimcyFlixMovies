@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Clickable Video Card</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .video-card {
+            cursor: pointer;
+            width: 800px;
+            height: 600px; 
+            border: 1px solid #ccc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('FlimcyFlixLogo.png');
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    </style>
+    <script>
+        function openNewPage(pageUrl) {
+            window.location.href = pageUrl;
+        }
+    </script>
+</head>
+<body>
+    <div class="video-card" onclick="openNewPage('https://flimcyv.github.io/FlimmyFlix/')"></div>
+
+    <div>
+        <h1>
+            PRESS THE PICTURE FOR FREE MOVIE WEBSITE!
+        </h1>
+    </div>
+</body>
+</html>
